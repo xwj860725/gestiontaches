@@ -52,16 +52,16 @@ gestiontaches
 /  Quick Start  /
 
 1. Start the Back-end
-# Navigate to the back-end directory
+* Navigate to the back-end directory
 cd backend-springboot
 
-# (Optional) Build and package the project
+* (Optional) Build and package the project
 mvn clean package
 
-# Start Spring Boot
+* Start Spring Boot
 mvn spring-boot:run
 
-# The back-end will listen on http://localhost:8080 by default
+* The back-end will listen on http://localhost:8080 by default
 NB: The database configuration is ignored in this repository. Please configure your personal database settings as follows:
 
 ini
@@ -73,16 +73,16 @@ spring.datasource.driver-class-name=org.postgresql.Driver
 
 
 2. Start the Front-end
-# Navigate to the front-end directory
+* Navigate to the front-end directory
 cd ../frontend-react
 
-# Install dependencies
+* Install dependencies
 npm install
 
-# Start the development server
+* Start the development server
 npm run dev
 
-# The front-end will listen on http://localhost:5175 by default
+* The front-end will listen on http://localhost:5175 by default
 NB: If you customize the front-end port, add that port to the whitelist in your back-end CORS or Security configuration.
 
 3. Test Functionality
