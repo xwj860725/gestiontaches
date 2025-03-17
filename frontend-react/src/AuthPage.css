@@ -1,0 +1,73 @@
+.container {
+    background-color: #80D8CE; 
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 50px;
+  }
+  
+  .form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 300px;
+    margin: auto;
+    background-color: transparent;  
+  }
+  
+  .input {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  .loginButton {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    background-color: #ff7cb9; 
+    color: white;   
+    cursor: pointer;
+  }
+  .loginButton:hover {
+    background-color: #E98C96;
+  }
+  
+  .registerButton {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    background-color: #ff7cb9; 
+    color: white;    
+    cursor: pointer;
+  }
+  .registerButton:hover {
+    background-color: #E98C96;
+  }
+
+  /* third-party container */
+.socialLogin {
+  margin: 20px 0;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+ /* third-party button */
+.socialButton {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  background-color: #007bff; 
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.socialButton:hover {
+  background-color: #0056b3;
+}

@@ -1,0 +1,143 @@
+.container1 {
+  background-color: #80D8CE;  /* background of tasks page */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column; /* vertical alignment of top buttons and task cards */
+  align-items: center;
+  padding: 20px;
+}
+
+/* top area for "add task", "search task" and "back to all tasks" buttons */
+.topBar {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end; /* buttons aligned to the right */
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+/* style of（add task、search task、reset search） */
+.addTaskButton,
+.searchTaskButton,
+.resetSearchButton {
+  color: black;
+  background-color: #dcfaff; 
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  border: 2px solid rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+}
+
+.addTaskButton:hover,
+.searchTaskButton:hover,
+.resetSearchButton:hover {
+  background-color: #ff7cb9;
+  color: #fff9c9;
+  font-weight: bold;
+}
+
+.task-card {
+  display: flex;
+  align-items: center;
+  background-color: #fff9c9; 
+  margin: 10px;
+  padding: 15px;
+  box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+
+.name {
+  color: rgb(10, 10, 10); /* for text of task's name */
+  font-size: 1.2em;
+  margin-right: 15px;
+}
+
+.deleteButton {
+  border: none;
+  border-radius: 8px;
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  background-color: #6cce95 !important;
+  color: #F2E3C6 !important;
+}
+
+.deleteButton:hover {
+  background-color: rgb(29, 28, 28) !important;
+  color: red !important;
+  font-weight: bold;
+}
+
+/* modal box background overlay*/
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* modal box content */
+.modalContent {
+  background-color: #fff9c9;
+  padding: 20px;
+  border-radius: 10px;
+  width: 300px;
+}
+
+/* form style */
+.modalForm {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.cancelButton {
+  border: none;
+  border-radius: 8px;
+  padding: 5px 10px;
+  background-color: #dcfaff;
+  color: black;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  border: 2px solid rgba(0, 0, 0, 0.2);
+}
+
+.cancelButton:hover {
+  background-color: rgb(29, 28, 28);
+  color: red;
+  font-weight: bold;
+}
+
+/* input box Style */
+.input {
+  padding: 8px;
+  font-size: 14px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+/* fixed logoutButton in the bottom-right corner of the screen */
+.logoutButton {
+  position: fixed;
+  bottom: 20px; 
+  right: 20px;  
+  color: rgb(137, 136, 136);
+  background-color: #dcfaff;
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  border: 2px solid rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+}
+
+.logoutButton:hover {
+  background-color: rgb(137, 136, 136);
+  color: white;
+  font-weight: bold;
+}
